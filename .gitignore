@@ -1,0 +1,9 @@
+__pycache__/
+build/
+dist/
+lib/__pycache__/
+shch_air_now_cfg/SergeyZeGreat.cfg
+shch_air_now_misc/air_quality_apis.html
+shch_air_now_misc/req-res-1.txt
+shch_air_now_misc/req-res-2.txt
+Vault/
