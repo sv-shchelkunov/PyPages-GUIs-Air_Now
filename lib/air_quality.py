@@ -41,8 +41,8 @@ class AirQuality():
     # Args: none
     # Returns : nothing
     def requestURL(self):
-        # self.request_URL = "https://www.airnowapi.org/aq/observation/zipCode/current/"+\
-        self.request_URL = "http://localhost:8080/"+\
+        # self.request_URL = "http://localhost:8080/"+\
+        self.request_URL = "https://www.airnowapi.org/aq/observation/zipCode/current/"+\
             "?format=application/json"+\
             f"&zipCode={self.zip_code}"+\
             f"&distance={self.distance_from}"+\
@@ -60,8 +60,8 @@ class AirQuality():
     # Returns: request_URL_full :  str
     def requestURLFull(self, date, hour, BBOX):
         date = date.strip()
-        # return "https://www.airnowapi.org/aq/data/"+\
-        return "http://localhost:8080/"+\
+        # return "http://localhost:8080/"+\
+        return "https://www.airnowapi.org/aq/data/"+\
             f"?startDate={date}T{hour}"+\
             f"&endDate={date}T{hour}"+\
             "&parameters=OZONE,PM25,PM10,CO,NO2,SO2"+\
